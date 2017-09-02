@@ -1,0 +1,1 @@
+This project uses Dijkstra's and Bellman-Ford's algorithms to find the shortest path through the directed graphs represented by the graphX.txt files in the project files. The program uses the boost graph library version 1.57.0. The main function runs Dijkstra or BellmanFord and prints the resultant shortest path throught the user specified graph generated from either function.
