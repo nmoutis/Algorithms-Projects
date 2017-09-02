@@ -40,8 +40,13 @@ int main(int argc, const char * argv[]) {
     try
     {
         string fileName;
+        int rows, cols;
         cout << "Enter Filename" << endl;
         cin >> fileName;
+        cout << "Enter number of maze rows" << endl;
+        cin >> rows;
+        cout << "Enter number of maze columns" << endl;
+        cin >> cols;
         
         ifstream fin;
         
@@ -59,7 +64,7 @@ int main(int argc, const char * argv[]) {
         m.mapMazeToGraph(g);
 //        std::cout << g << endl; //print mapped graph using overloaded output operator
         stack<Graph::vertex_descriptor> vstack;
-        pair<int, int> goal (19,19);
+        pair<int, int> goal (rows-1,cols-1);
 //        m.FindPathDFSRecursive(g, 0, goal, vstack);
         
         //create parameters for shortest path finder
